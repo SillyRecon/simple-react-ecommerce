@@ -30,27 +30,47 @@ Acceptance criteria:
 - [ ] Totals update correctly
 
 **Minimum folder structure Version 0.0**
-src/
 
-  app/router.jsx
-  
-  app/layout/RootLayout.jsx
-  
-  pages/HomePage.jsx
-  
-  pages/ProductPage.jsx
+    src/
+        app/
+          /layouts
+            - AccountLayout.jsx
+            - AdminLayout.jsx
+            - RootLayout.jsx
+          router.jsx
+        features/
+          /catalog
+            /components
+              - ProductCard.jsx
+          /cart
+            - cartContext.jsx
+        lib/
+          - http.js
+        pages/
+          /account
+            - OrderDetailPage.jsx
+            - OrdersPage.jsx
+          /admin
+            - AdminCreateProductPage.jsx
+            - AdminEditProdcutPage.jsx
+            - AdminHomePage.jsx
+            - AdminOrderDetailPage.jsx
+            - AdminOrdersPage.jsx
+            - AdminProductPage.jsx
+          - CartPage.jsx
+          - CategoryPage.jex
+          - CheckoutPage.jsx
+          - HomePage.jsx
+          - LoginPage.jsx
+          - OrderConfirmationPage.jsx
+          - SearchPage.jsx
+        styles/
+          - index.css
+        - App.css
+        - App.jsx
+        - main.jsx
+    
 
-  pages/CartPage.jsx
-  
-  features/catalog/components/ProductCard.jsx
-  
-  features/cart/cartContext.jsx
-  
-  lib/http.js
-  
-  main.jsx
-  
-  App.jsx
 
 
 ### Tech Stack
