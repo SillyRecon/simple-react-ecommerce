@@ -29,6 +29,18 @@ Acceptance criteria:
 - [ ] Quanty can be added to or taken from the cart.
 - [ ] Totals update correctly
 
+**Minimum folder structure Version 0.0**
+src/
+  app/router.jsx
+  app/layout/RootLayout.jsx
+  pages/HomePage.jsx
+  pages/ProductPage.jsx
+  pages/CartPage.jsx
+  features/catalog/components/ProductCard.jsx
+  features/cart/cartContext.jsx
+  lib/http.js
+  main.jsx
+  App.jsx
 
 
 ### Tech Stack
