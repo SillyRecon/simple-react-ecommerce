@@ -69,7 +69,16 @@ Acceptance criteria:
         - App.css
         - App.jsx
         - main.jsx
-    
+### Wireframes for pages
+
+#### Home Page
+<img width="437" height="306" alt="HomePage-2026-02-10-1736" src="https://github.com/user-attachments/assets/ff95c6fc-38d6-4bd5-8919-909b53a34163" />
+
+#### Category Page
+<img width="439" height="306" alt="CategoryPage-2026-02-10-1736" src="https://github.com/user-attachments/assets/24e87b61-5772-4563-a628-aba9e261eef4" />
+
+#### ProductDetail
+<img width="441" height="406" alt="ProductDetailPage-2026-02-10-1736" src="https://github.com/user-attachments/assets/da55cf9b-f49e-4b48-b853-0e36fa6c2970" />
 
 
 
