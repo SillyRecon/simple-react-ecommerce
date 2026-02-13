@@ -35,7 +35,7 @@ export const router = createBrowserRouter([
             //General routes
             {index: true, element: <HomePage />},
             {path: "c/:categorySlug", element: <CategoryPage />},
-            {path: "p/:productSlug", element: <ProductPage />},
+            {path: "p/:productId", element: <ProductPage />},
             {path: "search", element: <SearchPage />},
             {path: "cart", element: <CartPage />},
             {path: "checkout", element: <CheckoutPage />},
