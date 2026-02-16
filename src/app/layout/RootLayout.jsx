@@ -15,14 +15,14 @@ function NavItem({ to, children }) {
 
 export default function RootLayout() {
     return (
-        <div className="container py-3">
-            <div className="boarder rounded-4 bg-white shadow-sm overflow-hidden">
-                <header className="boarder-bottom">
-                    <nav className="navbar navbar-expand-lg bg-white">
-                        <div className="container-fluid">
+        <div className="min-vh-100 d-flex flex-column">
+            <header className="border-bottom bg-white">
+                <div className="container-fluid">
+                    <div className="container>">
+                        <nav className="navbar navbar-expand-lg bg-white px-0">
                             <NavLink to="/" className="navbar-brand d-flex align-items-center gap-2">
                                 <span className="d-inline-flex align-items-center justify-content-center border rounded-cicle"
-                                      style={{ width: 44, height: 44 }}
+                                    style={{ width: 44, height: 44 }}
                                 >
                                     Logo
                                 </span>
@@ -51,18 +51,20 @@ export default function RootLayout() {
                                     </NavLink>
                                 </div>
                             </div>
-                        </div>
-                    </nav>
-                </header>
+                        </nav>
+                    </div>
+                </div>
+            </header>
 
-                <main className="p-3">
+            <main className="flex-grow-1 py-4">
+                <div className="container">
                     <Outlet />
-                </main>
+                </div>
+            </main>
 
-                <footer className="border-top p-3 text-center text-muted">
-                    <p>&copy; {new Date().getFullYear()} Simple React Ecommerce Website. </p>
-                </footer>
-            </div>
+            <footer className="border-top p-3 text-center text-muted">
+                <p>&copy; {new Date().getFullYear()} Simple React Ecommerce Website. </p>
+            </footer>
         </div>
     );
 }
