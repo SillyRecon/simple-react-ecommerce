@@ -5,7 +5,7 @@ import { formatMoneyFromCents } from "../mockData";
 export default function ProductCard({ product }) {
     return (
         <div className="card h-100 shadow-sm">
-            <Link to={`/products/${product.id}`} className="text-decoration-none text-dark">
+            <Link to={`/p/${product.id}`} className="text-decoration-none text-dark">
                 <div className="ratio ratio-1x1 bg-light">
                     <img    
                         src={product.image} 
@@ -16,7 +16,7 @@ export default function ProductCard({ product }) {
                 </div>
                 <div className="card-body">
                     <h5 className="card-title mb-1">{product.title}</h5>
-                    <div className="text-secondary">{formatMoneyFromCents(product.price)}</div>
+                    <div className="text-secondary">{formatMoneyFromCents(product.priceCents)}</div>
                 </div>
             </Link>
         </div>
